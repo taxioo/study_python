@@ -1,0 +1,59 @@
+path(경로) : 파일(폴더)의 위치를 나타내는 문자열
+최상위 폴더 : root폴더(디렉토리)
+
+tree 구조
+    상위 == 부모
+    하위 == 자식
+
+current working directory(cwd)
+
+home direcory : 로그인 했을 때 지정되는 디폴트 워킹 디렉토리
+
+cd : chane directory  
+
+절대경로(absolute path)
+    root에서 시작되는 경로
+    \
+    /
+상대경로(relative path)
+    cwd에서 시작되는 경로
+    현재 디렉토리에서 찾음 / 발견되면 실행, 없으면 실행안함
+윈도우즈
+    드라이브 : 최상위 폴더
+    c:\temp
+    c:\temp\a.txt
+    c:\temp\test_a
+    c:\temp\test_a\c.txt
+
+    \temp\test_a\c.txt
+
+맥/리눅스
+    /temp
+    /temp/a.txt
+    /temp/test_a
+    /temp/test_a/c.txt
+
+test_a --> 상대경로
+\temp\test_a --> 절대경로
+
+
+cwd; c:\temp\ttt 가정하면
+test_a --> 상대경로
+    c:\temp\ttt\test_a
+
+cwd: c:\temp 가정하면
+test_a --> 상대경로
+    c:\temp\test_a
+
+앞에 슬래시가 있으면 절대경로/ 없으면 상대경로
+test_a\test_x
+
+파일 목록 보기 명령
+원: dir
+맥: is
+
+경로에 들어가지않고 내용을 보고 싶을떄 dir \temp
+
+dir의 ..은 상위 디렉토리
+. : 자기자신
+.. : 상위 폴더 / 부모 폴더
